@@ -1,206 +1,112 @@
 <!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Frances y Maná — panadería artesanal."
-    />
-    <title>Frances y Maná | Panadería artesanal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <div class="scroll-progress" aria-hidden="true"><span></span></div>
-    <div class="cursor-dot" aria-hidden="true"></div>
-    <div class="cursor-ring" aria-hidden="true"></div>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-    <header class="site-header">
-      <div class="container header__inner">
-        <a class="brand" href="#inicio" aria-label="Frances y Maná, inicio">
-          <img class="brand__logo" src="assets/frances-y-mana-mark.png" alt="" aria-hidden="true" />
-          <span class="brand__copy">
-            <span class="brand__name">Frances <em>y</em> Maná</span>
-            <span class="brand__tagline">Panadería &amp; pastelería</span>
-          </span>
-        </a>
-
-        <nav class="main-nav" aria-label="Navegación principal">
-          <a href="#especialidades">La carta</a>
-          <a href="#barrio">Para cada momento</a>
-          <a href="#proceso">Proceso</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
-
-        <a class="header-contact" href="tel:+573232902793" aria-label="Llamar al +57 323 2902793">
-          <span class="header-contact__label">Pedidos y reservas</span>
-          <span>+57 323 2902793</span>
-        </a>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#F9EFE5" />
+  <meta name="description" content="Café de especialidad colombiano para descubrir, preparar y compartir. Conoce Café y Tal: del café a tus sentidos. Date un gusto." />
+  <meta property="og:title" content="Café y Tal · Del café a tus sentidos" />
+  <meta property="og:description" content="Un origen que se siente. Una pausa que se disfruta. Descubre nuestro café de especialidad colombiano." />
+  <meta property="og:type" content="website" />
+  <title>Café y Tal · Del café a tus sentidos</title>
+  <link rel="icon" type="image/png" href="assets/cafeytal/simbolo.png" />
+  <link rel="preload" href="assets/fonts/PlayfairDisplay.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="assets/fonts/DMSans.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14" /></symbol>
+    <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6" /></symbol>
+    <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6" /></symbol>
+    <symbol id="plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" /></symbol>
+    <symbol id="minus" viewBox="0 0 24 24"><path d="M5 12h14" /></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></symbol>
+    <symbol id="instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><path d="M17.5 6.5h.01" /></symbol>
+    <symbol id="chat" viewBox="0 0 24 24"><path d="M21 11.5a9 9 0 0 1-13.6 7.8L3 21l1.5-4.5A9 9 0 1 1 21 11.5Z" /><path d="M8 9c.7 3 2 4.3 5 5l2-2" /></symbol>
+    <symbol id="spark" viewBox="0 0 40 40"><path d="m20 0 3.8 13 12-6.8L29 18l11 2-11 3.8 6.8 12L24 29l-4 11-3.8-13-12 6.8L11 22 0 20l13-3.8-6.8-12L18 11Z" fill="currentColor" stroke="none" /></symbol>
+  </svg>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <header class="site-header" id="cabecera">
+    <div class="header-inner container">
+      <a class="brand" href="#inicio" aria-label="Café y Tal, volver al inicio"><img src="assets/cafeytal/logo.png" alt="Café y Tal · Cultura cafetera" width="2400" height="816" fetchpriority="high" /></a>
+      <nav class="main-nav" id="navegacion" aria-label="Navegación principal"><a href="#nuestro-cafe">Nuestro café</a><a href="#origen">El origen</a><a href="#ritual">Tu ritual</a><a href="#esencia">Lo que somos</a><a class="nav-mobile-contact" href="#contacto">Hablemos</a></nav>
+      <a class="button button--small header-cta" href="#nuestro-cafe">Date un gusto <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacion" aria-label="Abrir menú de navegación"><span></span><span></span></button>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Cultura cafetera · Colombia</p>
+          <h1 id="hero-title">Del café<br />a tus <em>sentidos.</em></h1>
+          <p class="hero-description">Hay pausas que lo cambian todo.<br class="desktop-break" /> La nuestra empieza con un buen café colombiano.</p>
+          <div class="hero-actions"><a class="button" href="#nuestro-cafe">Encuentra tu café <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg></a><a class="quiet-link" href="#origen">Conoce el origen <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-footnote"><span class="small-spark" aria-hidden="true">✳</span><p>Hecho para tu día a día.<br /><strong>Para disfrutarlo a tu manera.</strong></p></div>
+        </div>
+        <figure class="hero-art" aria-label="Café de especialidad de Café y Tal">
+          <div class="hero-art__arch" aria-hidden="true"></div><div class="hero-art__orbit" aria-hidden="true"></div><span class="hero-art__little-orbit" aria-hidden="true"></span>
+          <div class="origin-stamp" aria-hidden="true"><span>DE AQUÍ,</span><svg class="icon"><use href="#spark" /></svg><span>DE COLOMBIA.</span></div>
+          <img class="hero-product" src="assets/cafeytal/cafe-castillo.webp" alt="Bolsa de Café y Tal con su símbolo botánico y su ilustración de colores" width="900" height="1135" fetchpriority="high" decoding="async" />
+          <span class="hero-art__caption">Un origen. Mil formas de sentirlo.</span><a class="hero-scroll" href="#nuestro-cafe" aria-label="Descubrir nuestro café"><svg class="icon" aria-hidden="true"><use href="#arrow-down" /></svg></a>
+        </figure>
       </div>
-    </header>
+    </section>
+    <div class="brand-ribbon" aria-label="Café colombiano, origen, aroma, ritual y buenos momentos"><div class="brand-ribbon__track"><span>Café colombiano</span><i>✳</i><span>Origen que se siente</span><i>✳</i><span>Una buena pausa</span><i>✳</i><span>Y tal.</span><i>✳</i><span aria-hidden="true">Café colombiano</span><i aria-hidden="true">✳</i><span aria-hidden="true">Origen que se siente</span><i aria-hidden="true">✳</i><span aria-hidden="true">Una buena pausa</span><i aria-hidden="true">✳</i><span aria-hidden="true">Y tal.</span><i aria-hidden="true">✳</i></div></div>
 
-    <main id="contenido">
-      <section id="inicio" class="site-intro" aria-labelledby="intro-title">
-        <div class="container site-intro__grid">
-          <div class="site-intro__content" data-reveal="left">
-            <p class="eyebrow">Panadería de barrio en Bogotá · Hecho con calma</p>
-            <h1 id="intro-title">El buen pan<br /><em>hace hogar.</em></h1>
-            <p>Pan recién horneado, parva colombiana y algo dulce para las onces. Recetas honestas para la mesa de todos los días.</p>
-            <a class="button magnetic" href="tel:+573232902793">Haz tu pedido <span aria-hidden="true">↗</span></a>
-          </div>
-
-          <figure class="hero-image" data-reveal="right">
-            <img
-              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85"
-              alt="Pan artesanal recién horneado sobre una mesa de madera"
-            />
-            <figcaption>Una pausa que sabe a recién horneado.</figcaption>
-          </figure>
+    <section class="coffee-section section-space" id="nuestro-cafe" aria-labelledby="coffee-title"><div class="container">
+      <div class="section-heading" data-reveal><div><p class="eyebrow">01 / Nuestro café</p><h2 id="coffee-title">Tu próxima<br /><em>buena taza.</em></h2></div><p>Café con nombre, con origen y con una historia que merece llegar a tu mesa. El resto lo pones tú.</p></div>
+      <article class="coffee-card" data-reveal>
+        <div class="coffee-card__visual"><span class="coffee-card__edition">Selección de origen / Colombia</span><span class="coffee-card__decor" aria-hidden="true"></span><img src="assets/cafeytal/cafe-castillo.webp" alt="Presentación de café Castillo de Café y Tal" width="900" height="1135" loading="lazy" decoding="async" /><div class="score-seal"><strong>85,50</strong><span>PUNTOS SCA</span></div><p class="coffee-card__visual-caption">De Gigante, Huila,<br />a tu momento favorito.</p></div>
+        <div class="coffee-card__content">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Gigante, Huila · Finca El Jardín</p><h3>Castillo<span class="red-dot">.</span></h3><p class="coffee-card__lead">Un encuentro entre lo dulce, lo cítrico y esa sensación de querer otra taza.</p>
+          <div class="tasting-notes" aria-label="Notas de sabor"><span><i class="note-dot note-dot--orange"></i>Panela</span><span><i class="note-dot note-dot--olive"></i>Cítricos</span><span><i class="note-dot note-dot--red"></i>Caramelo</span></div>
+          <dl class="coffee-facts"><div><dt>Proceso</dt><dd>Lavado</dd></div><div><dt>Altitud</dt><dd>1.750 m s. n. m.</dd></div><div><dt>Cuerpo</dt><dd>Sedoso</dd></div></dl>
+          <form class="coffee-order" id="coffee-order">
+            <fieldset class="presentation"><legend>¿Cómo te gusta?</legend><div class="segmented-control"><label><input type="radio" name="presentacion" value="en grano" checked /><span>En grano</span></label><label><input type="radio" name="presentacion" value="molido" /><span>Molido</span></label></div></fieldset>
+            <div class="order-actions"><div class="quantity-control" role="group" aria-label="Cantidad de bolsas"><button type="button" id="quantity-less" aria-label="Una bolsa menos" disabled><svg class="icon" aria-hidden="true"><use href="#minus" /></svg></button><output id="quantity" aria-live="polite" aria-label="Cantidad">1</output><button type="button" id="quantity-more" aria-label="Una bolsa más"><svg class="icon" aria-hidden="true"><use href="#plus" /></svg></button></div><a class="button order-link" id="order-link" href="https://wa.me/573215052745?text=Hola%2C%20Caf%C3%A9%20y%20Tal.%20Quiero%20pedir%20una%20bolsa%20de%20caf%C3%A9%20Castillo%20en%20grano.%20%C2%BFMe%20cuentan%20las%20presentaciones%20y%20el%20precio%3F" target="_blank" rel="noopener noreferrer">Lo quiero <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg></a></div>
+            <p class="order-note">Te contamos precios y presentaciones por WhatsApp.</p>
+          </form><p class="shipping-note"><svg class="icon" aria-hidden="true"><use href="#check" /></svg> Llevamos el café a toda Colombia.</p>
         </div>
-      </section>
+      </article>
+    </div></section>
 
-      <div class="bread-marquee" aria-label="Frases de Frances y Maná">
-        <div class="bread-marquee__track">
-          <span>Fermentos lentos</span><i aria-hidden="true">✦</i><span>Ingredientes locales</span><i aria-hidden="true">✦</i><span>Hecho a mano</span><i aria-hidden="true">✦</i><span>Fermentos lentos</span><i aria-hidden="true">✦</i><span>Ingredientes locales</span><i aria-hidden="true">✦</i><span>Hecho a mano</span><i aria-hidden="true">✦</i>
+    <section class="origin-section section-space" id="origen" aria-labelledby="origin-title"><div class="container origin-grid">
+      <figure class="origin-photo" data-reveal><img src="assets/cafeytal/origen.webp" alt="Cerezas de café maduras entre hojas verdes" width="724" height="724" loading="lazy" decoding="async" /><div class="origin-photo__label"><span>El comienzo de todo</span><strong>Origen<br />Colombia.</strong><svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg></div><figcaption>La tierra pone el origen. Las personas, el cuidado.</figcaption></figure>
+      <div class="origin-copy" data-reveal><p class="eyebrow">02 / De dónde venimos</p><h2 id="origin-title">Hay una historia<br />en cada <em>grano.</em></h2><p class="lead">Y nos gusta que la conozcas.</p><p>Todo empieza mucho antes de la primera taza. En la tierra, en la cosecha y en las manos que cuidan cada detalle. Nuestro Castillo viene de la finca El Jardín, en Gigante, Huila.</p><p>Acercamos esa historia a tu día a día con un café honesto, fácil de disfrutar y lleno de matices. Porque conocer su origen también es parte del gusto.</p><div class="origin-note"><span class="origin-note__number">01</span><p>Un buen café empieza en el campo.<br /><strong>Lo que sigue, lo compartimos contigo.</strong></p></div><a class="text-link" href="#ritual">Del origen a tu ritual <svg class="icon" aria-hidden="true"><use href="#arrow-right" /></svg></a></div>
+    </div></section>
+
+    <section class="ritual-section section-space" id="ritual" aria-labelledby="ritual-title"><div class="container">
+      <div class="section-heading section-heading--light" data-reveal><div><p class="eyebrow">03 / La pausa es tuya</p><h2 id="ritual-title">Tu momento.<br /><em>Tu manera.</em></h2></div><p>No necesitas complicarlo para disfrutarlo. Encuentra el ritual que va contigo y deja que el café haga lo suyo.</p></div>
+      <div class="ritual-grid" data-reveal>
+        <div class="ritual-visual" id="ritual-visual">
+          <img id="ritual-photo" src="assets/cafeytal/ritual.webp" alt="Preparación de café filtrado en un gotero sobre una jarra de cerámica" width="724" height="724" loading="lazy" decoding="async" />
+          <svg id="ritual-espresso" class="method-illustration" viewBox="0 0 520 520" role="img" aria-label="Ilustración de una taza y una cafetera espresso" hidden><circle cx="270" cy="270" r="190" fill="#C6C154" /><g fill="none" stroke="#212121" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><path d="M120 335h280v28H120zM155 144h204v186H155zM155 215h204M183 176h46m46 0h45M259 215v30m-24 0h48m-74 19h72v34c0 37-72 37-72 0zm72 7c43-10 43 36-1 28M180 333v-24m156 24v-44M115 363v26m290-26v26" /><circle cx="258" cy="175" r="18" /><path d="M386 206v63m-14 0h28" /></g><path d="M220 400h90" stroke="#E23D3D" stroke-width="7" stroke-linecap="round" /></svg>
+          <svg id="ritual-coldbrew" class="method-illustration" viewBox="0 0 520 520" role="img" aria-label="Ilustración de un vaso de café frío con hielo" hidden><circle cx="260" cy="260" r="190" fill="#9FDBDD" /><g fill="none" stroke="#212121" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><path d="m170 155 27 235c3 24 126 24 130 0l27-235M167 155c0-26 190-26 190 0s-190 26-190 0Z" /><path d="M181 252c50 14 105 14 162-1M202 386c35 9 76 9 118 0M252 224l32-38 35 33-33 39zm-63-37 35-15 14 35-35 14zM268 296l30-15 17 31-31 16zM203 328l29-15 17 30-31 16z" /></g><path d="M383 204v28m-14-14h28M135 304v26m-13-13h26" stroke="#E23D3D" stroke-width="6" stroke-linecap="round" /></svg>
+          <span class="ritual-visual__caption" id="ritual-caption">Un poco de agua. Un poco de calma.</span>
         </div>
-      </div>
-
-      <section id="especialidades" class="specialties" aria-labelledby="specialties-title">
-        <div class="container">
-          <div class="section-heading" data-reveal="up">
-            <div>
-              <p class="eyebrow">Del horno a tu mesa</p>
-              <h2 id="specialties-title">La parva que se antoja todos los días.</h2>
-            </div>
-            <p class="section-heading__intro">
-              Una carta cercana: panes para llevar a casa, amasijos colombianos para acompañar un chocolate y dulces para las onces.
-            </p>
-          </div>
-
-          <div class="specialties__grid" data-stagger>
-            <article class="specialty-card" data-reveal="up" data-tilt>
-              <div class="specialty-card__number">01</div>
-              <h3>Pan campesino</h3>
-              <p>Pan de miga suave, corteza dorada y sabor casero. El que no puede faltar para el desayuno o la comida.</p>
-              <span class="specialty-card__label">Pan de diario</span>
-            </article>
-
-            <article class="specialty-card specialty-card--accent" data-reveal="up" data-tilt>
-              <div class="specialty-card__number">02</div>
-              <h3>Almojábana</h3>
-              <p>Cuajada, harina de maíz y mantequilla en un amasijo tibio, doradito por fuera y suave por dentro.</p>
-              <span class="specialty-card__label">Ideal con chocolate</span>
-            </article>
-
-            <article class="specialty-card" data-reveal="up" data-tilt>
-              <div class="specialty-card__number">03</div>
-              <h3>Pan de bono</h3>
-              <p>Almidón de yuca y queso, horneados en tandas pequeñas para que lleguen a la mesa aún tibios.</p>
-              <span class="specialty-card__label">Recién horneado</span>
-            </article>
-
-            <article class="specialty-card" data-reveal="up" data-tilt>
-              <div class="specialty-card__number">04</div>
-              <h3>Mogolla</h3>
-              <p>Un pan ligeramente dulce, de textura tierna, perfecto para la lonchera o una merienda de media tarde.</p>
-              <span class="specialty-card__label">Para la lonchera</span>
-            </article>
-
-            <article class="specialty-card specialty-card--soft" data-reveal="up" data-tilt>
-              <div class="specialty-card__number">05</div>
-              <h3>Roscón de guayaba y queso</h3>
-              <p>Masa esponjosa con bocadillo de guayaba y queso. Un clásico de vitrina para compartir entre dos.</p>
-              <span class="specialty-card__label">Hora de las onces</span>
-            </article>
-
-            <article class="specialty-card" data-reveal="up" data-tilt>
-              <div class="specialty-card__number">06</div>
-              <h3>Milhoja tradicional</h3>
-              <p>Capas de hojaldre crujiente y crema pastelera. Preparada con calma para el antojo de algo dulce.</p>
-              <span class="specialty-card__label">Dulce de vitrina</span>
-            </article>
-          </div>
-
-          <p class="specialties__note">La disponibilidad puede variar según la hora: lo mejor de la panadería es llegar cuando el horno acaba de sonar.</p>
-        </div>
-      </section>
-
-      <section id="barrio" class="neighborhood" aria-labelledby="neighborhood-title">
-        <div class="container neighborhood__layout">
-          <div data-reveal="left">
-            <p class="eyebrow">Como en la panadería de siempre</p>
-            <h2 id="neighborhood-title">Un buen acompañante para cada momento.</h2>
-          </div>
-          <div class="neighborhood__list" data-reveal="right">
-            <p><strong>Desayuno</strong><span>Pan campesino, almojábana y pan de bono para empezar el día.</span></p>
-            <p><strong>Las onces</strong><span>Roscón, mogolla y algo dulce para conversar sin afán.</span></p>
-            <p><strong>Para llevar</strong><span>Panes enteros y pedidos para la casa, la oficina o una reunión.</span></p>
-          </div>
-        </div>
-      </section>
-
-      <section id="proceso" class="process" aria-labelledby="process-title">
-        <div class="container process__layout">
-          <div class="process__intro" data-reveal="left">
-            <p class="eyebrow">Nuestro ritual</p>
-            <h2 id="process-title">El tiempo también es un ingrediente.</h2>
-            <p>Desde los amasijos de la mañana hasta el pan para llevar, trabajamos con paciencia para que cada bocado tenga buen sabor.</p>
-            <a class="text-link magnetic" href="tel:+573232902793">Pregunta por los horneados del día <span aria-hidden="true">↗</span></a>
-          </div>
-
-          <ol class="process-list">
-            <li data-reveal="right">
-              <span class="process-list__number">01</span>
-              <div><h3>Mezclamos</h3><p>Harinas seleccionadas, agua, sal y un toque de masa madre.</p></div>
-            </li>
-            <li data-reveal="right">
-              <span class="process-list__number">02</span>
-              <div><h3>Esperamos</h3><p>La fermentación lenta desarrolla aromas profundos y una miga ligera.</p></div>
-            </li>
-            <li data-reveal="right">
-              <span class="process-list__number">03</span>
-              <div><h3>Horneamos</h3><p>Cada pieza entra al horno cuando está lista, nunca antes.</p></div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="quote-section" aria-label="Opinión de cliente">
-        <div class="container quote-card" data-reveal="up">
-          <span class="quote-card__mark" aria-hidden="true">“</span>
-          <blockquote>Hay lugares que alimentan el cuerpo. Frances y Maná alimenta también la memoria.</blockquote>
-          <cite>— Valentina R. · Cliente habitual</cite>
-        </div>
-      </section>
-
-      <section id="contacto" class="contact-strip" aria-labelledby="contact-title">
-        <div class="container contact-strip__inner" data-reveal="up">
-          <div>
-            <p class="eyebrow">Estamos para servirte</p>
-            <h2 id="contact-title">Hablemos de tu próximo antojo.</h2>
-          </div>
-          <a class="contact-link magnetic" href="tel:+573232902793">+57 323 2902793 <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container site-footer__inner">
-        <p>© <span id="current-year"></span> Frances y Maná.</p>
-        <div class="designer-credit" aria-label="Diseñado por ArteLibre">
-          <span>Diseñado por</span>
-          <img src="assets/ArteLibre-Logo-Reimagined.png" alt="ArteLibre" />
+        <div class="ritual-content">
+          <div class="method-tabs" role="tablist" aria-label="Elige un método de preparación"><button type="button" role="tab" id="tab-filtrado" aria-controls="method-panel" aria-selected="true" tabindex="0" data-method="filtrado">01 <span>Filtrado</span></button><button type="button" role="tab" id="tab-espresso" aria-controls="method-panel" aria-selected="false" tabindex="-1" data-method="espresso">02 <span>Espresso</span></button><button type="button" role="tab" id="tab-coldbrew" aria-controls="method-panel" aria-selected="false" tabindex="-1" data-method="coldbrew">03 <span>En frío</span></button></div>
+          <div id="method-panel" class="method-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-filtrado"><p class="eyebrow" id="method-tag">Para disfrutar sin afán</p><h3 id="method-title">Baja el ritmo.<br />Sube el aroma.</h3><p class="method-description" id="method-description">Un filtro, agua caliente y un momento para ti. Una forma de explorar los matices de tu café, taza a taza.</p><ol class="method-steps" id="method-steps"><li><span>01</span><p>Humedece el filtro y añade tu café molido.</p></li><li><span>02</span><p>Vierte el agua poco a poco, con movimientos suaves.</p></li><li><span>03</span><p>Deja filtrar, sirve y disfruta de los pequeños detalles.</p></li></ol></div>
+          <a class="text-link text-link--light" id="method-help" href="https://wa.me/573215052745?text=Hola%2C%20%C2%BFme%20ayudan%20a%20elegir%20la%20molienda%20para%20caf%C3%A9%20filtrado%3F" target="_blank" rel="noopener noreferrer">Te ayudamos con la molienda <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg></a>
         </div>
       </div>
-    </footer>
+    </div></section>
 
-    <script src="js/main.js"></script>
-  </body>
+    <section class="essence-section section-space" id="esencia" aria-labelledby="essence-title"><div class="container">
+      <div class="essence-heading" data-reveal><p class="eyebrow">04 / Lo que llevamos dentro</p><h2 id="essence-title">Más que café.<br /><em>Una forma de sentir.</em></h2><p>Nos mueve el origen. Nos unen las personas.<br />Y nos gusta hacer de lo cotidiano algo especial.</p></div>
+      <div class="values-grid" data-reveal><article><img src="assets/cafeytal/autentica.webp" alt="" width="180" height="180" loading="lazy" /><h3>Auténtica</h3><p>Con raíces colombianas y una historia propia que contar.</p></article><article><img src="assets/cafeytal/cercana.webp" alt="" width="180" height="180" loading="lazy" /><h3>Cercana</h3><p>Una conversación sencilla. Una taza que nos encuentra.</p></article><article><img src="assets/cafeytal/sensorial.webp" alt="" width="180" height="180" loading="lazy" /><h3>Sensorial</h3><p>Aromas, texturas y sabores para estar aquí y ahora.</p></article><article><img src="assets/cafeytal/artesanal.webp" alt="" width="180" height="180" loading="lazy" /><h3>Artesanal</h3><p>El cuidado de los detalles, desde el campo hasta tu taza.</p></article></div>
+    </div></section>
+
+    <section class="shared-moment" aria-labelledby="moment-title"><img src="assets/cafeytal/compartir.webp" alt="Dos tazas de café sobre lino junto a la luz de la mañana" width="724" height="724" loading="lazy" decoding="async" /><div class="shared-moment__copy"><p class="eyebrow">Los buenos momentos se comparten</p><h2 id="moment-title">Tú pones<br />la conversación.<br /><em>Nosotros, el café.</em></h2><a class="text-link" href="https://www.instagram.com/cafe_ytal/" target="_blank" rel="noopener noreferrer">Nos vemos en @cafe_ytal <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg></a></div></section>
+
+    <section class="faq-section section-space" aria-labelledby="faq-title"><div class="container faq-grid"><div data-reveal><p class="eyebrow">Un café, cero enredos</p><h2 id="faq-title">Por si te<br /><em>lo preguntas.</em></h2><a class="text-link" href="https://wa.me/573215052745" target="_blank" rel="noopener noreferrer">Conversemos <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg></a></div><div class="faq-list" data-reveal><details><summary>¿Cómo hago mi pedido?<svg class="icon" aria-hidden="true"><use href="#plus" /></svg></summary><p>Elige si prefieres tu café en grano o molido y cuántas bolsas quieres. Al tocar «Lo quiero» abriremos WhatsApp con tu elección. Allí confirmamos la presentación, el precio y el envío contigo.</p></details><details><summary>¿Hacen envíos a mi ciudad?<svg class="icon" aria-hidden="true"><use href="#plus" /></svg></summary><p>Hacemos envíos a toda Colombia. Escríbenos con tu ciudad y te contamos el costo y el tiempo estimado de entrega antes de confirmar tu pedido.</p></details><details><summary>¿En grano o molido?<svg class="icon" aria-hidden="true"><use href="#plus" /></svg></summary><p>Si tienes molino, elige en grano y muele al preparar. Si lo prefieres molido, cuéntanos qué cafetera o método usas para ayudarte a elegir la molienda.</p></details><details><summary>¿Qué significan las notas de sabor?<svg class="icon" aria-hidden="true"><use href="#plus" /></svg></summary><p>Son una manera de describir lo que puedes percibir al probar el café. Las notas de panela, cítricos y caramelo de nuestro Castillo te dan una pista para empezar a descubrirlo.</p></details></div></div></section>
+
+    <section class="contact-section" id="contacto" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">Tu próxima pausa empieza aquí</p><h2 id="contact-title">Date un <em>gusto.</em></h2><p>Un café con historia. Un momento que es solo tuyo.</p></div><a class="contact-circle" href="https://wa.me/573215052745?text=Hola%2C%20Caf%C3%A9%20y%20Tal.%20Quiero%20conocer%20su%20caf%C3%A9." target="_blank" rel="noopener noreferrer" aria-label="Hablar con Café y Tal por WhatsApp"><svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg><span>Hablemos<br />por WhatsApp</span></a><img class="contact-art" src="assets/cafeytal/ilustracion.webp" alt="" aria-hidden="true" width="650" height="813" loading="lazy" /></div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-top"><a href="#inicio" class="footer-brand" aria-label="Café y Tal, volver al inicio"><img src="assets/cafeytal/logo-crema.png" alt="Café y Tal · Cultura cafetera" width="2400" height="816" loading="lazy" /></a><p>Colombia en el origen.<br />El gusto, en los detalles.</p><div class="footer-social"><a href="https://www.instagram.com/cafe_ytal/" target="_blank" rel="noopener noreferrer" aria-label="Café y Tal en Instagram"><svg class="icon" aria-hidden="true"><use href="#instagram" /></svg></a><a href="https://wa.me/573215052745" target="_blank" rel="noopener noreferrer" aria-label="Café y Tal en WhatsApp"><svg class="icon" aria-hidden="true"><use href="#chat" /></svg></a></div></div><div class="footer-bottom"><p>© <span id="current-year">2026</span> Café y Tal · Cultura cafetera</p><a href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a><div class="designer-credit"><span>Una experiencia de</span><img src="assets/ArteLibre-Logo-Reimagined.png" alt="ArteLibre" width="40" height="40" loading="lazy" /></div></div></div></footer>
+</body>
 </html>
